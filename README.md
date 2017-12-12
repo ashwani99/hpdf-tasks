@@ -41,6 +41,7 @@ These tasks consists of implementation of multiple endpoints which serve differe
 
 ## Requires
 - Python 3.x
+- Flask
 
 ## License
 MIT
