@@ -44,7 +44,7 @@ def get_cookies():
 
 @app.route('/robots.txt')
 def deny_request():
-    return '<h1>Access Denied</h1><a href="/">Go home</a>'
+    return '<h1>Access Denied</h1><a href="/">Go home</a>', 403
 
 
 @app.route('/html')
