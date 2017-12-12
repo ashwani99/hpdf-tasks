@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Authors</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Author</th>
+        <th>Number of books</th>
+      </tr>
+      {% for author in authors %}
+        <tr>
+          <td>{{ author.name }}</td>
+          <td>{{ author.post_count }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
