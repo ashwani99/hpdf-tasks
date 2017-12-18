@@ -30,8 +30,10 @@ def authors():
 @app.route('/setcookie')
 def set_cookie():
     resp = make_response('<h1>Your cookies are now set!</h1><p>View them <a href="/getcookies">here</a></p>')
-    resp.set_cookie('name', 'Ashwani')
-    resp.set_cookie('age', '22')
+    if 'name' not in request.cookies:
+        resp.set_cookie('name', 'Ashwani')
+    if 'age' not in request.cookies:
+        resp.set_cookie('age', '22')
     return resp
 
 
